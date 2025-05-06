@@ -1,10 +1,24 @@
 const timeElement = document.getElementById("time");
-const   name   = document.getElementById("name");
+const counter = document.getElementById("counter");
+const name = document.getElementById("name");
 
-const currentTime = new Date().toLocaleTimeString();
 
-timeElement.textContent = `Time is  ${currentTime}`;
 
+function updateTime() {
+    chrome.storage.sync.get(["name", "timer"], (data) => {
+
+        name.textContent = data.name || "Default Value";
+        let timer = data.timer || 0;
+        counter.textContent = `Counter: ${timer}`;
+
+    });
+
+
+    const currentTime = new Date().toLocaleTimeString();
+
+    timeElement.textContent = `Time is  ${currentTime}`;
+
+}
 
 
 chrome.action.setBadgeText({
@@ -16,7 +30,15 @@ chrome.action.setBadgeText({
 
 });
 
-chrome.storage.sync.get(["name"],(data)=>{
- 
-    name.textContent =data.name || "Default Value";
-});
+
+
+console.log("This from popup1.js");
+console.log(this); // Window object in popup context
+
+
+
+
+updateTime();
+setInterval(() => {
+    updateTime();
+},1000);

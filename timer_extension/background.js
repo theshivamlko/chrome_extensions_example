@@ -1,1 +1,40 @@
-confirm.console.log("Background script loaded.");
+console.log("Background script loaded.");
+
+
+console.log("This from Background Script");
+console.log(this); // ServiceWorkerGlobalScope
+
+// setInterval(() => {
+//     console.log("SetInterval");
+
+// }, 1000);
+
+chrome.alarms.create('myAlarm',{
+    "periodInMinutes": 1 / 30,
+});
+
+chrome.alarms.onAlarm.addListener((alarm) => {
+
+    console.log("This from Background onAlarm");
+    chrome.storage.sync.get(["timer"],(data)=>{
+        let timer = data.timer || 0;
+
+        timer += 1;
+        chrome.storage.sync.set({timer: timer},()=>{
+        });
+
+        chrome.action.setBadgeText({
+            text: `T-${timer}`,
+        }, () => {
+            console.log("Current Time: ", new Date().toLocaleTimeString());
+        
+        });
+
+    });
+
+});
+
+
+
+
+
