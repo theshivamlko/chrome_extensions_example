@@ -30,9 +30,20 @@ chrome.alarms.onAlarm.addListener((alarm) => {
         
         });
 
-    });
+
+        // Show notification
+        if( timer % 30 === 0 ){
+            this.registration.showNotification("Chrome Timer",{
+                body:"Notification Body "+timer,
+                icon: "icon.png",
+            } );
+        }
+        
 
 });
+});
+
+console.log("This Notification from Background Script after setInterval");
 
 
 
