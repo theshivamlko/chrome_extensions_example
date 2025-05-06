@@ -18,5 +18,7 @@ chrome.storage.sync.get(["name","testKey"],(data)=>{
     console.log(`Read from  LocaL Storage `);
     console.log(data);
     console.log(data.name);
+    console.log(data.testKey);
+    text.value=data.name || "Default Value";
 
 });

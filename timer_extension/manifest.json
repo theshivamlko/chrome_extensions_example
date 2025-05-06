@@ -17,12 +17,11 @@
         "default_title": "Timer Extension Title",
         "default_popup": "popup1.html"
     },
-    "options_page":"options.html",
-    "permissions":[
+    "options_page": "options.html",
+    "permissions": [
         "storage"
-    ]
-
-
-
-    
+    ],
+    "background": {
+        "service_worker": "background.js"
+    }
 }
