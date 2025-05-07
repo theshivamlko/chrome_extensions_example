@@ -9,7 +9,9 @@
     "128": "icon.png"
   },
   "permissions": [
-    "contextMenus"
+    "contextMenus",
+    "search",
+    "tabs"
   ],
   "background": {
     "service_worker": "background.js"

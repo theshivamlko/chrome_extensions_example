@@ -54,6 +54,18 @@ chrome.runtime.onInstalled.addListener((details) => {
             console.log("Select Option");
             console.log(details.selectionText);
             console.log(details.pageUrl);
+            // chrome.search.query({
+            //     disposition:'NEW_TAB',
+            //     text: `IMDB ${details.selectionText}`
+            // })
+
+            chrome.tabs.query({
+                currentWindow:true
+            },(tabs)=>{
+                console.log("tabs query");
+                console.log(tabs);
+            })
+
         }
 
     })
