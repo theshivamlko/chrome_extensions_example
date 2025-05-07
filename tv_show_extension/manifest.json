@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "TV Show Extension",
+  "version": "1.0.0",
+  "description": "This extension helps you track your favorite TV shows.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

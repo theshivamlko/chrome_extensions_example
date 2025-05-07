@@ -13,7 +13,7 @@ chrome.alarms.create('myAlarm', {
     "periodInMinutes": 1 / 30,
 });
 
-chrome.alarms.onAlarm.addListener((alarm) => {
+chrome.alarms.onAlarm.addEventListener((alarm) => {
 
     console.log("This from Background onAlarm");
     chrome.storage.sync.get(["timer", "notifyTime","isRunning"], (data) => {
