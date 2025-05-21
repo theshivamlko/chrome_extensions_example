@@ -1,3 +1,6 @@
+
+
+
 chrome.runtime.onInstalled.addListener((details) => {
 
     // reason: 'update' or 'install'
@@ -54,21 +57,42 @@ chrome.runtime.onInstalled.addListener((details) => {
             console.log("Select Option");
             console.log(details.selectionText);
             console.log(details.pageUrl);
-            // chrome.search.query({
-            //     disposition:'NEW_TAB',
-            //     text: `IMDB ${details.selectionText}`
-            // })
 
-            chrome.tabs.query({
-                currentWindow:true
-            },(tabs)=>{
-                console.log("tabs query");
-                console.log(tabs);
+            chrome.search.query({
+                disposition:'NEW_TAB',
+                text: `IMDB ${details.selectionText}`
             })
+
+            chrome.tabs.create({
+                active:true,
+                url: `https://www.facebook.com`
+            })
+
+
+            // chrome.tabs.query({
+            //     currentWindow:true
+            // },(tabs)=>{
+            //     console.log("tabs query");
+            //     console.log(tabs);
+            // })
 
         }
 
-    })
+    });
+});
 
+chrome.storage.local.get(["text"],(data)=>{
+    console.log("Background storage");
+    console.log(data.text);
+});
+
+
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+    console.log("onMessage");
+    console.log(msg);
+    console.log(sender);
+
+   sendResponse({ status: 'Hello' });
 
 });
+

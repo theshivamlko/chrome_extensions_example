@@ -11,9 +11,19 @@
   "permissions": [
     "contextMenus",
     "search",
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/*"],
+      "exclude_matches": ["https://www.store.google.com/*"],
+      "js": ["contentScript.js"],
+
+        "css": ["contentScript.css"]
+    }
+  ]
 }
