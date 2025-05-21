@@ -28,5 +28,10 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     console.log(msg);
     console.log(sender);
     divElements[0].style.backgroundColor = 'red';
+    if(msg['name']){
+        divElements[0].innerHTML = ` ${msg['name']} \n ${msg['summary']}`;
+
+    }
+
 
 });

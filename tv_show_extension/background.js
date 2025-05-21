@@ -1,3 +1,8 @@
+
+
+
+
+
 chrome.runtime.onInstalled.addListener((details) => {
 
     // reason: 'update' or 'install'
@@ -55,15 +60,15 @@ chrome.runtime.onInstalled.addListener((details) => {
             console.log(details.selectionText);
             console.log(details.pageUrl);
 
-            chrome.search.query({
-                disposition: 'NEW_TAB',
-                text: `IMDB ${details.selectionText}`
-            })
+            // chrome.search.query({
+            //     disposition: 'NEW_TAB',
+            //     text: `IMDB ${details.selectionText}`
+            // })
 
-            chrome.tabs.create({
-                active: true,
-                url: `https://www.facebook.com`
-            })
+            // chrome.tabs.create({
+            //     active: true,
+            //     url: `https://www.facebook.com`
+            // })
 
 
             // chrome.tabs.query({
@@ -72,6 +77,25 @@ chrome.runtime.onInstalled.addListener((details) => {
             //     console.log("tabs query");
             //     console.log(tabs);
             // })
+
+
+            fetch(`https://api.tvmaze.com/search/shows?q=${details.selectionText}`).then(async res=>{
+                console.log("then");
+                let list=await res.json();
+                console.log(list[0].show.name);
+                console.log(list[0].show.summary);
+
+                chrome.tabs.query({active: true, currentWindow: true}, (tabs) => {
+                    if (tabs && tabs.length > 0) {
+                        console.log("Response Sent");
+                        chrome.tabs.sendMessage(tabs[0].id, list[0].show);
+                    }
+                });
+
+            }).catch(err=>{
+                console.log("catch");
+                console.log(err);
+            })
 
         }
 
@@ -94,4 +118,5 @@ chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
     chrome.tabs.sendMessage(sender.tab.id, 'Hello To Tab from Background');
 
 });
+
 
