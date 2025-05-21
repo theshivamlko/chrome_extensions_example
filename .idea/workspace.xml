@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="save">
-      <change afterPath="$PROJECT_DIR$/tv_show_extension/contentScript.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv_show_extension/contentScript.js" afterDir="false" />
+    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="message passing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tv_show_extension/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/tv_show_extension/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv_show_extension/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/tv_show_extension/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tv_show_extension/contentScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/tv_show_extension/contentScript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +79,7 @@
       <workItem from="1747309863493" duration="620000" />
       <workItem from="1747594021986" duration="10000" />
       <workItem from="1747630829696" duration="5000" />
-      <workItem from="1747806687954" duration="9835000" />
+      <workItem from="1747806687954" duration="11603000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <option name="closed" value="true" />
@@ -91,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746600510174</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="message passing">
+      <option name="closed" value="true" />
+      <created>1747820637306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747820637306</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +116,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="save" />
-    <option name="LAST_COMMIT_MESSAGE" value="save" />
+    <MESSAGE value="message passing" />
+    <option name="LAST_COMMIT_MESSAGE" value="message passing" />
   </component>
 </project>

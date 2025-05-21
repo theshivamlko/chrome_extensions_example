@@ -22,3 +22,11 @@ chrome.runtime.sendMessage(text,(res)=>{
     console.log("Content script message Received");
     console.log(res.status);
 });
+
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+    console.log("onMessage");
+    console.log(msg);
+    console.log(sender);
+    divElements[0].style.backgroundColor = 'red';
+
+});
