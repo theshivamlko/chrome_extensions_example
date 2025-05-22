@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="message passing background to contentScript.js">
+    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="update ui from api response">
+      <change afterPath="$PROJECT_DIR$/react_extension/assets/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/src/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/src/popup/popup.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv_show_extension/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/tv_show_extension/background.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tv_show_extension/contentScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/tv_show_extension/contentScript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -44,21 +50,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/shivam/WebProjects/chrome_extensions_example/react_extension/assets",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "/Users/shivam/WebProjects/chrome_extensions_example/react_extension/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/react_extension/assets" />
+      <recent name="$PROJECT_DIR$/react_extension/src" />
+      <recent name="$PROJECT_DIR$/react_extension" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/react_extension" />
+      <recent name="$PROJECT_DIR$/react_extension/src" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +98,7 @@
       <workItem from="1747309863493" duration="620000" />
       <workItem from="1747594021986" duration="10000" />
       <workItem from="1747630829696" duration="5000" />
-      <workItem from="1747806687954" duration="13941000" />
+      <workItem from="1747806687954" duration="24047000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <option name="closed" value="true" />
@@ -105,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747823681845</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update ui from api response">
+      <option name="closed" value="true" />
+      <created>1747827441881</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747827441881</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +153,7 @@
     <MESSAGE value="save" />
     <MESSAGE value="message passing" />
     <MESSAGE value="message passing background to contentScript.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="message passing background to contentScript.js" />
+    <MESSAGE value="update ui from api response" />
+    <option name="LAST_COMMIT_MESSAGE" value="update ui from api response" />
   </component>
 </project>
