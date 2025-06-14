@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="update ui from api response">
-      <change afterPath="$PROJECT_DIR$/react_extension/assets/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/src/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/src/popup/popup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/src/background.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/src/contentScript.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/src/options/options.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/src/popup/popup.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_extension/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_extension/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/src/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_extension/src/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/src/popup/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_extension/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,8 @@
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
         <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -38,8 +42,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/theshivamlko/chrome_extensions_example&quot;,
-    &quot;accountId&quot;: &quot;263e1532-608b-44a5-b34c-4775806936e8&quot;
+    &quot;url&quot;: &quot;https://github.com/theshivamlko/chrome_extensions_example.git&quot;,
+    &quot;accountId&quot;: &quot;15829519-c156-4201-a1e7-ffbc76cecd95&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -53,17 +57,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/shivam/WebProjects/chrome_extensions_example/react_extension/assets",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "/Users/shivam/WebProjects/chrome_extensions_example/react_extension/node_modules/typescript/lib",
+    "ts.external.directory.path": "C:\\Users\\Navoki\\WebProjects\\chrome_extensions_example\\react_extension\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,7 +87,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-WS-243.21565.180" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-WS-251.26094.131" />
       </set>
     </attachedChunks>
   </component>
@@ -99,6 +105,11 @@
       <workItem from="1747594021986" duration="10000" />
       <workItem from="1747630829696" duration="5000" />
       <workItem from="1747806687954" duration="24047000" />
+      <workItem from="1749644777077" duration="146000" />
+      <workItem from="1749663690995" duration="600000" />
+      <workItem from="1749894009759" duration="1120000" />
+      <workItem from="1749910485719" duration="597000" />
+      <workItem from="1749913908376" duration="4285000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <option name="closed" value="true" />
