@@ -1,14 +1,14 @@
 const path = require('path');
 const CopyPlugin = require('copy-webpack-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    devtool:'cheap-module-source-map',
-    entry:{
+    entry: {
         popup: path.resolve(__dirname, 'src/popup/popup.tsx'),
         options: path.resolve(__dirname, 'src/options/options.tsx'),
+        background: path.resolve(__dirname, 'src/background.ts'),
+        contentScript: path.resolve(__dirname, 'src/contentScript.ts'),
     },
     module: {
         rules: [
@@ -16,7 +16,7 @@ module.exports = {
                 use: 'ts-loader',
                 test: /\.tsx?$/,
                 exclude: /node_modules/,
-            },{
+            }, {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
@@ -34,6 +34,9 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
     },
     plugins: [
+        new CleanWebpackPlugin({
+            cleanStaleWebpackAssets: false,
+        }),
         new CopyPlugin({
             patterns: [{
                 from: path.resolve(__dirname, 'src/manifest.json'),
@@ -54,6 +57,7 @@ module.exports = {
         },
     }
 }
+
 function getHtmlPlugins(chunks) {
     return chunks.map(chunk => new HtmlPlugin({
         title: 'React Extension',

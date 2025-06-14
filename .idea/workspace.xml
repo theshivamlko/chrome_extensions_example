@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="update ui from api response">
-      <change afterPath="$PROJECT_DIR$/react_extension/src/background.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/src/contentScript.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/src/options/options.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react_extension/src/popup/popup.css" afterDir="false" />
+    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment=".gitignore">
+      <change afterPath="$PROJECT_DIR$/react_extension/webpack.dev.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react_extension/webpack.prod.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_extension/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_extension/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/src/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react_extension/src/popup/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/src/popup/popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/react_extension/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react_extension/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react_extension/webpack.common.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +58,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/shivam/WebProjects/chrome_extensions_example/react_extension/assets",
+    "last_opened_file_path": "C:/Users/Navoki/WebProjects/chrome_extensions_example/react_extension",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,6 +72,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Navoki\WebProjects\chrome_extensions_example\react_extension" />
       <recent name="$PROJECT_DIR$/react_extension/assets" />
       <recent name="$PROJECT_DIR$/react_extension/src" />
       <recent name="$PROJECT_DIR$/react_extension" />
@@ -110,6 +108,7 @@
       <workItem from="1749894009759" duration="1120000" />
       <workItem from="1749910485719" duration="597000" />
       <workItem from="1749913908376" duration="4285000" />
+      <workItem from="1749922826892" duration="3402000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <option name="closed" value="true" />
@@ -143,7 +142,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747827441881</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="react option">
+      <option name="closed" value="true" />
+      <created>1749922961294</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1749922961294</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".gitignore">
+      <option name="closed" value="true" />
+      <created>1749923060977</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749923060977</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +180,8 @@
     <MESSAGE value="message passing" />
     <MESSAGE value="message passing background to contentScript.js" />
     <MESSAGE value="update ui from api response" />
-    <option name="LAST_COMMIT_MESSAGE" value="update ui from api response" />
+    <MESSAGE value="react option" />
+    <MESSAGE value=".gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=".gitignore" />
   </component>
 </project>

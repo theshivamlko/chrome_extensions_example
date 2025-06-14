@@ -12,3 +12,6 @@ const root = createRoot(rootElement);
 
 root.render(test);
 
+chrome.runtime.onInstalled.addListener((detail) => {
+    console.log("onInstalled",detail);
+})
