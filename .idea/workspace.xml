@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="new ad_blocker">
-      <change afterPath="$PROJECT_DIR$/ad_blocker/assets/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ad_blocker/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ad_blocker/webpack.common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ad_blocker/webpack.dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ad_blocker/webpack.prod.js" afterDir="false" />
+    <list default="true" id="0165b9a7-5b3f-412d-a5ab-a9b6b594bf56" name="Changes" comment="blocking ads">
+      <change afterPath="$PROJECT_DIR$/ad_blocker/assets/rules.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ad_blocker/src/background.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ad_blocker/src/background.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ad_blocker/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/ad_blocker/src/manifest.json" afterDir="false" />
@@ -113,7 +109,7 @@
       <workItem from="1749913908376" duration="4285000" />
       <workItem from="1749922826892" duration="4447000" />
       <workItem from="1749973255853" duration="1894000" />
-      <workItem from="1749975916651" duration="7092000" />
+      <workItem from="1749975916651" duration="8290000" />
     </task>
     <task id="LOCAL-00001" summary="save">
       <option name="closed" value="true" />
@@ -179,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749975463500</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="blocking ads">
+      <option name="closed" value="true" />
+      <created>1749993703363</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749993703363</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +209,7 @@
     <MESSAGE value=".gitignore" />
     <MESSAGE value="webpack dev prod clean" />
     <MESSAGE value="new ad_blocker" />
-    <option name="LAST_COMMIT_MESSAGE" value="new ad_blocker" />
+    <MESSAGE value="blocking ads" />
+    <option name="LAST_COMMIT_MESSAGE" value="blocking ads" />
   </component>
 </project>

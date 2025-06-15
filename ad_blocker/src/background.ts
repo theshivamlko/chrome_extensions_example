@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
 chrome.webRequest.onBeforeRequest.addListener((details) => {
     console.log("onBeforeRequest", details)
 
@@ -23,9 +42,9 @@ chrome.webRequest.onBeforeRequest.addListener((details) => {
     }
 }, {
     urls:["<all_urls>"]
-    // urls: ["*://*.googlesyndication.com/*", "*://*.googleadservices.com/*",
-    //     "*://*.youtube.com/api/stats/ads*", "*://*.youtube.com/pagead/adview*",
-    // "*://*.doubleclick.net/*"]
+    // urls: ["*://!*.googlesyndication.com/!*", "*://!*.googleadservices.com/!*",
+    //     "*://!*.youtube.com/api/stats/ads*", "*://!*.youtube.com/pagead/adview*",
+    // "*://!*.doubleclick.net/!*"]
 
 }, ["blocking"]);
 
@@ -48,6 +67,7 @@ chrome.webRequest.onCompleted.addListener((details) => {
 }, {
     urls: ["<all_urls>"]
 });
+*/
 
 
 
